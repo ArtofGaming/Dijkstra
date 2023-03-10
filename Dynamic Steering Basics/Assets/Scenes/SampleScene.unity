@@ -467,7 +467,6 @@ MonoBehaviour:
   ConnectsTo:
   - {fileID: 2116943553}
   - {fileID: 432178429}
-  - {fileID: 1122445238}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
