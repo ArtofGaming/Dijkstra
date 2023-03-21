@@ -12,6 +12,7 @@ public class Node : MonoBehaviour
 
     private void Start()
     {
+        beggars = new GameObject[4];
         for (int i = 0; i < beggars.Length; i++)
         {
             beggars[i] = (GameObject.CreatePrimitive(PrimitiveType.Capsule));

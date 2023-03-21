@@ -33,7 +33,7 @@ public class HelperGraph
         {
             foreach (Node toNode in fromNode.ConnectsTo)
             {
-                float cost = (toNode.beggars.Length / (toNode.beggars.Length + 1) + toNode.dirtiness / nodes.Length);
+                float cost = (((float)toNode.beggars.Length / (1f/2f)) + toNode.dirtiness);
                 Connection c = new Connection(cost, fromNode, toNode);
                 mConnections.Add(c);
             }

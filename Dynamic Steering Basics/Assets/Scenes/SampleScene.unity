@@ -159,8 +159,9 @@ MonoBehaviour:
   ConnectsTo:
   - {fileID: 432178429}
   - {fileID: 673877617}
+  - {fileID: 1122445238}
   beggars: []
-  dirtiness: 0
+  dirtiness: 6
 --- !u!136 &196963261
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -355,6 +356,7 @@ MonoBehaviour:
   - {fileID: 2116943553}
   - {fileID: 673877617}
   - {fileID: 196963260}
+  - {fileID: 1122445238}
   beggars:
   - {fileID: 0}
   dirtiness: 0
@@ -472,6 +474,8 @@ MonoBehaviour:
   ConnectsTo:
   - {fileID: 2116943553}
   - {fileID: 432178429}
+  - {fileID: 1122445238}
+  - {fileID: 196963260}
   beggars:
   - {fileID: 0}
   - {fileID: 0}
@@ -865,7 +869,10 @@ MonoBehaviour:
   ConnectsTo:
   - {fileID: 2116943553}
   - {fileID: 673877617}
+  - {fileID: 432178429}
+  - {fileID: 196963260}
   beggars:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1032,7 +1039,7 @@ MonoBehaviour:
   maxAngularVelocity: 45
   myTarget: {fileID: 0}
   start: {fileID: 2116943553}
-  goal: {fileID: 673877617}
+  goal: {fileID: 196963260}
   nodesInList:
   - {fileID: 2116943553}
   - {fileID: 432178429}
