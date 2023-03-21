@@ -1,8 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pathfinder : Kinematic
+public class HelperPathfinder : Kinematic
 {
     public Node start;
     public Node goal;
@@ -21,10 +21,10 @@ public class Pathfinder : Kinematic
         myRotateType.character = this;
         myRotateType.target = myTarget;
 
-        Graph myGraph = new Graph();
+        HelperGraph myGraph = new HelperGraph();
         myGraph.Build();
-        List<Connection> path = Dijkstra.pathfind(myGraph, start, goal);
-        
+        List<Connection> path = HelperDijkstra.pathfind(myGraph, start, goal);
+
         // path is a list of connections - convert this to gameobjects for the FollowPath steering behavior
         myPath = new GameObject[path.Count + 1];
         int i = 0;
